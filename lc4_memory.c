@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lc4_memory.h"
 
 /*
@@ -68,7 +66,7 @@ row_of_memory* search_opcode  (row_of_memory* head,
 	/* traverse linked list until node is found with matching opcode
 	   AND "assembly" field of node is empty */
 
-	/* return pointer to node in the list of item is found */
+	/* return pointer to node in the list if item is found */
 
 	/* return NULL if list is empty or if no matching nodes */
 
