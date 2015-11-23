@@ -1,11 +1,14 @@
 #ifndef LC4_MEMORY_H
 #define LC4_MEMORY_H
 
-/*
- * definition of linked list node 
- */ 
+#include <stdio.h>
+#include <stdlib.h>
 
-typedef struct row_of_memory_struct {
+/*
+ * definition of linked list node
+ */
+
+typedef struct row_of_memory {
 	short unsigned int address ;
 	char * label ;
 	short unsigned int contents ;
@@ -15,17 +18,17 @@ typedef struct row_of_memory_struct {
 
 
 /*
- * declaration of linked list helper functions 
+ * declaration of linked list helper functions
  */
 
-int add_to_list    	      (row_of_memory** head, 
-			       short unsigned int address, 
+int add_to_list    	      (row_of_memory** head,
+			       short unsigned int address,
 			       short unsigned int contents) ;
 
-row_of_memory* search_address (row_of_memory* head, 
+row_of_memory* search_address (row_of_memory* head,
 			       short unsigned int address ) ;
 
-row_of_memory* search_opcode  (row_of_memory* head, 
+row_of_memory* search_opcode  (row_of_memory* head,
 			       short unsigned int opcode  ) ;
 
 void print_list		      (row_of_memory* head ) ;
