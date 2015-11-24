@@ -37,5 +37,5 @@ int main (int argc, char** argv) {
 
 
 	/* only return 0 if everything works properly */
-	return 0 ;
+	return -1 ;
 }
