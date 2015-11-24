@@ -10,7 +10,7 @@ typedef struct row_of_memory_struct {
 	char * label ;
 	short unsigned int contents ;
 	char * assembly ;
-	struct row_of_memory *next ;
+	struct row_of_memory_struct *next ;
 } row_of_memory ;
 
 
