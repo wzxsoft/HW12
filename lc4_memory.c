@@ -21,7 +21,7 @@ int add_to_list (row_of_memory** head,
 	/* return 0 for success, -1 if malloc fails */
 
     row_of_memory* node = (row_of_memory*)malloc(sizeof(row_of_memory));
-    if(!(node)) return -1;
+    if(!(node)) return -2;
     node->next = NULL;
 
     node->address = address;
